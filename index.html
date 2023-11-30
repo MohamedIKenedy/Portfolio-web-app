@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFQIR Mohamed portfolio</title>
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scVQ1A==" crossorigin="anonymous" />
+    
+  </head>
+
+  <body>
+
+
+    
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class="bx bx-menu" id="menu-icon">
+
+        </i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header> 
+
+
+
+    <div class="vertical-scroll">
+        <!-- home section design -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello, It's me</h3>
+                <h1>IFQIR Mohamed</h1>
+                <h3>And I am an <span> AI&ML engineer</span></h3>
+                <p>
+                    I am a passionate AI&ML engineer, I am eager to contribute to the advancements of AI.
+                </p>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/mohamed-ifqir-329840242/" class="social-icon">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/MohamedIKenedy" class="social-icon">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <a href="documents/MoIFQ_EN_CV.pdf" download class="btn">Download CV</a>
+            </div>
+
+            <div class="home-img">
+                <img src="images/home.png" alt="home-img">
+            </div>
+        </section>
+
+        <!-- about section design -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="images/about.png" alt="">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>AI & ML engineer</h3>
+                <p>
+                    I am a passionate AI&ML engineer, I have a good experience in the field of AI&ML.
+                </p>
+            <button type="submit" class="btn" id="aboutBTN" onclick="openPopup()">Read More</button>        </div>
+            <div class="popup" id="popup">
+                <h2>About Me!</h2>
+                <ul>
+                    <li><span class="highlight">Problem-Solving:</span> I specialize in solving complex challenges using AI and ML, extracting actionable insights from data for diverse industries.</li>
+                    <li><span class="highlight">AI Architect & ML Specialist:</span> Designing scalable AI architectures, implementing diverse ML techniques, and deploying efficient models for real-time applications.</li>
+                    <li><span class="highlight">Data Science Expert:</span> Proficient in predictive modeling, statistical analysis, and extracting insights from complex datasets to drive impactful decisions.</li>
+                    <!-- Add more strengths as needed -->
+                </ul>
+                <div class="image-gallery">
+                    <img src="images/portfolio1.jpg" alt="Image 1">
+                    <img src="images/portfolio2.jpg" alt="Image 2">
+                    <!-- Add more images as needed -->
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="btn close" id="closeBTN" onclick="closePopup()">Close</button>
+                </div>
+            </div>
+            
+
+        </section>
+
+        <!-- services section design -->
+        <section class="services" id="services">
+            <h2 class="heading">My <span> Services</span></h2>
+            <div class="services-container">
+                <div class="services-box">
+                    <div class="service-icon">
+                        <i class='bx bxs-bot'></i> 
+                        <h3>AI&ML development</h3>
+                        <p>
+                            I have a good experience in the field of AI&ML, I have worked on many projects in this field.
+                        </p>
+                        <a href="#" class="btn">
+                            Read More
+
+                        </a>
+                        </div>
+                </div>
+
+                <div class="services-box">
+                    <div class="service-icon">
+                        <i class="bx bxs-data"></i>
+                        <h3>Data Science</h3>
+                        <p>
+                            I have a good experience in the field of AI&ML, I have worked on many projects in this field.
+                        </p>
+                        <a href="#" class="btn">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="services-box">
+                    <div class="service-icon">
+                        <i class='bx bx-code-curly' ></i>
+                        <h3>Software engineering</h3>
+                        <p>
+                            I have a good experience in the field of AI&ML, I have worked on many projects in this field.
+                        </p>
+                        <a href="#" class="btn">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- portfolio section design -->
+        <section class="section portfolio" id="portfolio" >
+            <h2 class="heading">Latest <span>Projects</span></h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="images/project2.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Arabic Text Classifier NLP</h4>
+                        <p>
+                            This project is a text classifier for Arabic language, it is based on NLP and machine learning.
+                        </p>
+                        <a href="https://github.com/MohamedIKenedy/Arabic-Text-Classifier" target="_blank"><i class='bx bx-link-alt' ></i></a>               
+                     </div>
+                </div>
+
+
+                <div class="portfolio-box">
+                    <img src="images/project4.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Plot Synopsis text Generator</h4>
+                        <p>
+                            This project is a text generator for plot synopsis, it uses Knowledge Graphs to generate new stories
+                        </p>
+                        <a href="#"><i class='bx bx-link-alt' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/project1.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Image Search Engine</h4>
+                        <p>
+                            This project is an image search engine that uses computer vision to find similar images.
+                        </p>
+                        <a href="https://github.com/MohamedIKenedy/Image-Search-Engine" target="_blank"><i class='bx bx-link-alt' ></i></a>               
+                    </div>
+                </div>
+
+
+                <div class="portfolio-box">
+                    <img src="images/project3.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>DRL Robot Navigation</h4>
+                        <p>
+                            Autonomous Robot navigation system using the Twin delayed DDPG DRL algorithm.
+                            The robot is capable of navigating through the environment without colliding with obstacles.
+                        </p>
+                        <a href="https://github.com/MohamedIKenedy/Robot-Navigation-TD3" target="_blank"><i class='bx bx-link-alt' ></i></a>               
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/project5.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Big data weather analysis</h4>
+                        <p>
+                            Use of Hadoop and MapReduce to extract useful insight from the weather data of MENARA STATION
+                        </p>
+                        <a href="https://github.com/MohamedIKenedy/Big-data-weather-analysis" target="_blank"><i class='bx bx-link-alt' ></i></a>               
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/Git.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Find Out More!</h4>
+                        <p>
+                            For more projects, visit my github account linked below
+
+                            
+                        </p>
+                        <a href="https://github.com/MohamedIKenedy" target="_blank"><i class='bx bx-link-alt' ></i></a>               
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- contact section design -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact<span> Me!</span></h2>
+            <form action="mailto:mohamedifqir99@gmail.com" method="post" enctype="text/plain">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Full Name">
+                    <input type="email" name="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="tel" name="phone" placeholder="Mobile Number">
+                    <input type="text" name="subject" placeholder="Email Subject">
+                </div>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+        <!-- footer design -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>
+                    Copyright &copy; 2023 | All Rights Reserved.
+                </p>
+                <div class="footer-iconTop">
+                    <a href="#home">
+                        <i class='bx bx-up-arrow-alt' ></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup")
+        }
+        function closePopup() {
+            let popup = document.getElementById("popup");
+            popup.classList.add("close-popup");
+            setTimeout(() => {
+                popup.classList.remove("open-popup");
+                popup.classList.remove("close-popup");
+            }, 400); // Change this value to match the transition duration in milliseconds
+        }
+
+        
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scVQ1A==" crossorigin="anonymous"></script>
+  </body>
+</html>
