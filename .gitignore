@@ -1,0 +1,12 @@
+# Ignore images in the root directory
+*.jpg
+*.png
+*.gif
+
+# Ignore images in a specific directory (replace 'images/' with your actual directory name)
+images/*.jpg
+images/*.png
+images/*.gif
+
+# Ignore entire image directories (replace 'images/' with your actual directory name)
+images/
