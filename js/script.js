@@ -74,11 +74,12 @@ function clickHandler(e) {
     });
 }
 
-new fullpage('body', {
-    sectionSelector: '.section',
-    autoScrolling: true,
-    scrollHorizontally: true
-});
+// new fullpage('body', {
+//     sectionSelector: '.section',
+//     autoScrolling: true,
+//     scrollHorizontally: true
+// });
+
 
 
 // Get the 'Read More' button in the About section

@@ -19,13 +19,19 @@
 }
 
 section {
-    min-height: 150vh; /* Adjust this value as needed */
+    min-height: 160vh; /* Adjust this value as needed */
 }
 
 html{
     font-size: 62.5%;
     overflow: hidden;
 }
+
+html::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 
 body{
     background-color: var(--bg-color);
@@ -95,10 +101,10 @@ section{
 
 
 .home-img img{
-    width: 30vw;
+    width: 40vw;
     transition: all 0.3s ease;
     animation: floatImage 4s ease-in-out infinite;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 @keyframes floatImage{
@@ -188,6 +194,8 @@ span{
 
 .about-img img{
     width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+    margin-right: 20px;
 }
 
 .heading{
@@ -315,13 +323,13 @@ span{
 
 
 .portfolio-box h4{
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: var(--text-color);
     margin-bottom: 1rem;
 }
 
 .portfolio-layer p{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin: .3rem 0 1rem;
     color: var(--second--bg-color);
 }
@@ -330,18 +338,45 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background: var(--text-color);
     border-radius: 50%;
 }
 
 .portfolio-layer a i{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--second--bg-color);
 }
 
+.tech-icons i {
+    font-size: 5.2rem;
+    margin-bottom: 15px;
+}
 
+.tech-icons img {
+    width: 5.5em; /* Adjust as needed to match Boxicons size */
+    height: auto; /* Keep aspect ratio */
+    fill: var(--main-color); /* Main color */
+}
+
+.tech-icons .icon {
+    position: relative;
+    display: inline-block;
+}
+
+.tech-icons .icon:hover::after {
+    content: attr(title);
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tech-icons i, .tech-icons img {
+    margin-right: 10px; /* Add space to the right of each icon */
+}
 
 
 .contact h2{
@@ -701,6 +736,17 @@ ul {
         height: 100vh;
     }
 }
+
+body {
+    overflow-y: scroll; /* Enable vertical scrollbar */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+section {
+    height: 100vh; /* Set each section's height to full viewport height */
+    /* Other styles for your sections */
+}
+
 
 
 
